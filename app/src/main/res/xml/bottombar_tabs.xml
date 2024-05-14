@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home_view_layout"
+        title="@string/home" />
+    <tab
+        id="@+id/tab_paper"
+        icon="@drawable/cart_view_layout"
+        title="@string/information" />
+    <tab
+        id="@+id/tab_green"
+        icon="@drawable/green_view_layout"
+        title="@string/share" />
+    <tab
+        id="@+id/tab_event"
+        icon="@drawable/cart_view_layout"
+        title="@string/ShoppingCart" />
+    <tab
+        id="@+id/tab_my"
+        icon="@drawable/my_view_layout"
+        title="@string/my" />
+</tabs>

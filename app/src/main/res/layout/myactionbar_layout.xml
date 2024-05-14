@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/barTint"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/actionbar_back_btn"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="18dp"
+        android:src="@mipmap/navbar_back"
+        android:tint="@color/barFore" />
+
+    <ImageView
+        android:id="@+id/actionbar_recommond_btn"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:tint="@color/barFore"
+        android:visibility="gone" />
+
+    <com.zmonster.recyclebuy.view.FontTextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/actionbar_recommond_btn"
+        android:layout_toEndOf="@+id/actionbar_back_btn"
+        android:ellipsize="end"
+        android:gravity="center"
+        tools:text="test"
+        android:lines="1"
+        android:textColor="@color/barFore"
+        android:textSize="14sp" />
+
+</RelativeLayout>

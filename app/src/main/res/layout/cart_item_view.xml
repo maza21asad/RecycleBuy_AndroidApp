@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/rounder_panel_white_bg"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/cover_view"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@color/grey_small"
+        app:riv_corner_radius="5dp"
+        app:riv_oval="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/shop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="商品名字"
+            android:textColor="@color/black_black_middle"
+            android:textSize="16sp"
+            app:type_face_font="museosans_700" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/shop_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="商品描述.."
+            android:textColor="@color/black_black_small"
+            android:textSize="14sp"
+            app:type_face_font="museosans_300" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/price_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="价格：xx"
+            android:textColor="@color/black_black_small"
+            android:textSize="13sp"
+            app:type_face_font="museosans_300" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/buy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="购买件数"
+                android:textColor="@color/black_black_middle"
+                android:textSize="14sp"
+                app:type_face_font="museosans_500" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/subtract_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey_small"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="—"
+                    android:textColor="@color/black_black_middle"
+                    android:textSize="13sp" />
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/select_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:background="@color/grey_small"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="12sp" />
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/add_count"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/grey_small"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/black_black_middle"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/remove_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounder_left_panel_grey_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="移除"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:type_face_font="museosans_300" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/now_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounder_right_panel_orange_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="去付款"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:type_face_font="museosans_300" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

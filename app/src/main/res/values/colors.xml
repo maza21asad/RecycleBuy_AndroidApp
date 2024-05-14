@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#38B6FF</color>
+    <color name="purple_500">#38B6FF</color>
+    <color name="purple_700">#38B6FF</color>
+    <color name="teal_200">#38B6FF</color>
+    <color name="app_theme">#38B6FF</color>
+    <color name="teal_700">#38B6FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="back">#FFFFFF</color>
+    <color name="backLight">#E6ECF0</color>
+    <color name="fore">#14171A</color>
+    <color name="foreLight">#657786</color>
+    <color name="barTint">#38B6FF</color>
+    <color name="colorAccent">#38B6FF</color>
+    <color name="colorPrimary">#38B6FF</color>
+    <color name="colorPrimaryDark">#38B6FF</color>
+    <color name="barFore">#FFFFFF</color>
+    <color name="barForeLight">#8ED0F8</color>
+    <color name="tabBack">#F5F8FA</color>
+    <color name="tabFore">#38B6FF</color>
+    <color name="tabForeLight">#575553</color>
+    <color name="colorGreyAccent">#4C73C8</color>
+    <color name="windowBackgroud">#E9E9E9</color>
+    <color name="translucentRed">#99cc0000</color>
+    <color name="violet">#975FE1</color>
+    <color name="black_black_middle">#353434</color>
+    <color name="black_black_small">#949494</color>
+    <color name="icon_unselect">#B7C4CB</color>
+    <color name="grey_small">#E9E9E9</color>
+    <color name="trans_grey">#88000000</color>
+    <color name="hint_grey_normal">#999999</color>
+    <color name="yellow_normal">#DA9B22</color>
+    <color name="normal_grey_small">#666666</color>
+    <color name="black_txt_normal">#333333</color>
+    <color name="line_grey">#CDD1D7</color>
+    <color name="white_bottom">#F2F6FB</color>
+    <color name="hot_red">#FA2800</color>
+    <color name="red_normal">#A51F1F</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="colorControlNormal">#efefed</color>
+    <color name="green_color">#1FD86D</color>
+    <color name="black_30">#30000000</color>
+    <color name="black_50">#50000000</color>
+    <color name="black_70">#70000000</color>
+    <color name="gray_normal">#666667</color>
+    <color name="orange_middle">#F97427</color>
+    <color name="orange_small">#F8AD33</color>
+    <color name="white_small">#FAFAFA</color>
+
+
+</resources>

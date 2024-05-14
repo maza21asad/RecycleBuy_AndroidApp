@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/shop_cover"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:riv_corner_radius_top_left="8dp"
+            app:riv_corner_radius_top_right="8dp"
+            app:riv_oval="false" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/out_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:drawableStart="@mipmap/coin_small"
+            android:drawablePadding="3dp"
+            android:textColor="@color/red_normal"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:type_face_font="museosans_700" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounder_bottom_panel_white_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="15dp">
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/shop_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black_black_middle"
+            android:textSize="13sp"
+            app:type_face_font="museosans_500" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/current_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@mipmap/coin_small"
+                android:drawablePadding="3dp"
+                android:textColor="@color/hot_red"
+                android:textSize="16sp"
+                app:type_face_font="museosans_700" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/seller_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/normal_grey_small"
+                android:textSize="13sp"
+                app:type_face_font="museosans_300" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

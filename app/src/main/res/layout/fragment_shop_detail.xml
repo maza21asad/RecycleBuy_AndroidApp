@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white_small"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/shop_cover_vpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp" />
+
+                <com.shizhefei.view.indicator.FixedIndicatorView
+                    android:id="@+id/indicator_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounder_panel_white_bg"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/shop_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="4"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:textColor="@color/black_black_middle"
+                    android:textSize="16sp"
+                    app:type_face_font_edit="museosans_700" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.zmonster.recyclebuy.view.FontTextView
+                        android:id="@+id/out_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:drawableStart="@mipmap/coin_small"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/black_black_small"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        app:type_face_font="museosans_300" />
+
+                    <com.zmonster.recyclebuy.view.FontTextView
+                        android:id="@+id/current_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/coin_small"
+                        android:drawablePadding="3dp"
+                        android:textColor="@color/hot_red"
+                        android:textSize="16sp"
+                        app:type_face_font="museosans_700" />
+
+                </LinearLayout>
+
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/shop_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@string/xiaoliang"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="13sp"
+                    app:type_face_font_edit="museosans_500" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey_small" />
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="15dp"
+                    android:text="@string/shop_detail_tip"
+                    android:textColor="@color/black_black_middle"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:type_face_font="museosans_700" />
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/shop_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:textColor="@color/black_black_small"
+                    android:textSize="14sp"
+                    app:type_face_font_edit="museosans_500" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/add_like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/star_white"
+            app:tint="@color/grey_small" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/now_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rounder_right_panel_orange_bg"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/buy_now"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@+id/now_buy"
+            android:background="@drawable/rounder_left_panel_orange_bg"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp"
+            android:text="@string/add_cart_tip"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounder_panel_white_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="40dp">
+
+                <RelativeLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/user_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/default_user_icon"
+                        app:riv_oval="true" />
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/user_sex_state"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="2dp"
+                        android:src="@mipmap/male" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.zmonster.recyclebuy.view.FontTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_black_middle"
+                        android:textSize="15sp"
+                        app:type_face_font="museosans_700" />
+
+                    <com.zmonster.recyclebuy.view.FontTextView
+                        android:id="@+id/user_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black_black_small"
+                        android:textSize="13sp"
+                        app:type_face_font="museosans_300" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/profile_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/profile_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/yellow_normal"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/profile_info"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700"
+                tools:targetApi="m" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/update_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/password_icon"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/translucentRed"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/update_password"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700"
+                tools:targetApi="m" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/user_inctegral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/signin"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/barTint"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/points_detail"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700"
+                tools:targetApi="m" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/my_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/favorite_oval"
+                android:drawablePadding="8dp"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/favorite"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700"
+                tools:targetApi="m" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/order"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/hot_red"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/my_order"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700"
+                tools:targetApi="m" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/seller_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/seller_icon"
+                android:drawablePadding="8dp"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/seller_center"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:type_face_font="museosans_700" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/release_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/seller_icon"
+                android:drawablePadding="8dp"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="15dp"
+                android:text="@string/release_news"
+                android:textColor="@color/black_black_middle"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/translucentRed"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:text="@string/exit"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:type_face_font="museosans_700" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+

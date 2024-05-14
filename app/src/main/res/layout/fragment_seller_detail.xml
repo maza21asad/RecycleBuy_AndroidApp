@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/content_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/shop_cover_vpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <com.shizhefei.view.indicator.FixedIndicatorView
+                    android:id="@+id/indicator_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp" />
+
+            </RelativeLayout>
+
+
+            <com.zmonster.recyclebuy.view.FontEditText
+                android:id="@+id/shop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounder_panel_grey_bg"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:hint="@string/shop_name"
+                android:maxLines="4"
+                android:minLines="4"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="7dp"
+                android:textColor="@color/black_txt_normal"
+                android:textSize="16sp"
+                app:type_face_font_edit="museosans_500" />
+
+            <com.zmonster.recyclebuy.view.FontEditText
+                android:id="@+id/shop_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounder_panel_grey_bg"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:hint="@string/shop_description"
+                android:maxLines="10"
+                android:minLines="10"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="7dp"
+                android:textColor="@color/black_txt_normal"
+                android:textSize="14sp"
+                app:type_face_font_edit="museosans_500" />
+
+            <com.zmonster.recyclebuy.view.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="15dp"
+                android:text="@string/shop_detail"
+                android:textColor="@color/black_black_middle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:type_face_font="museosans_700" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xiaoliang"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="15sp" />
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:id="@+id/shop_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:text="0"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="13sp"
+                    app:type_face_font_edit="museosans_500" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kucun"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="15sp" />
+
+                <com.zmonster.recyclebuy.view.FontEditText
+                    android:id="@+id/shop_kucun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounder_panel_grey_bg"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:hint="@string/please_input_kucun"
+                    android:maxLines="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="13sp"
+                    app:type_face_font_edit="museosans_500" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orig_price"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="15sp" />
+
+                <com.zmonster.recyclebuy.view.FontEditText
+                    android:id="@+id/shop_orig_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounder_panel_grey_bg"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:hint="@string/please_input_price"
+                    android:maxLines="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="13sp"
+                    app:type_face_font_edit="museosans_500" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.zmonster.recyclebuy.view.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_price"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="15sp" />
+
+                <com.zmonster.recyclebuy.view.FontEditText
+                    android:id="@+id/shop_curr_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/rounder_panel_grey_bg"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:hint="@string/please_input_price"
+                    android:maxLines="1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:textColor="@color/black_txt_normal"
+                    android:textSize="13sp"
+                    app:type_face_font_edit="museosans_500" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_shop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/xiajia"
+            app:backgroundTint="@color/grey_small" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_shop_info"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/update_title" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

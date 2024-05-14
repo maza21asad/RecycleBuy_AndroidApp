@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/rounder_panel_white_bg"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/points_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black_black_middle"
+            android:textSize="14sp"
+            app:type_face_font="museosans_700" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black_black_small"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <com.zmonster.recyclebuy.view.FontTextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:drawableStart="@mipmap/coin_small"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_black_small"
+        android:textSize="16sp"
+        app:type_face_font="museosans_500" />
+
+</LinearLayout>

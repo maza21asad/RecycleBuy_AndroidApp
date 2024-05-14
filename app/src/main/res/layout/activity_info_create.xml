@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="18dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shop_name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+        <com.zmonster.recyclebuy.view.FontEditText
+            android:id="@+id/message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:hint="@string/input_shop_name_please"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_txt_normal"
+            android:textSize="14sp"
+            android:background="@drawable/rounder_forelight_border"/>
+
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black_black_middle"
+            android:textSize="14sp"
+            android:text="@string/shop_cover_info"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/info_cover_layout"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"/>
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black_black_middle"
+            android:textSize="14sp"
+            android:text="@string/shop_video_info"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/info_video_select"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/local_resource_add"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_info_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/barTint"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginVertical="40dp"
+            android:text="@string/shop_post"/>
+    </LinearLayout>
+</ScrollView>

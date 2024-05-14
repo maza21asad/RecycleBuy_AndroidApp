@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_points_shop">
+
+
+    <com.zmonster.recyclebuy.view.FontTextView
+        android:id="@+id/points_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/points_detail"
+        android:textColor="@color/white"
+        app:type_face_font="museosans_500" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/qiandao_layout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/qiandao" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/qiandao_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="签到"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:type_face_font="museosans_700" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:text="余额"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:type_face_font="museosans_700" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/coin" />
+
+        <com.zmonster.recyclebuy.view.FontTextView
+            android:id="@+id/total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:text="0"
+            android:textColor="@color/hot_red"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:type_face_font="museosans_700" />
+
+
+    </LinearLayout>
+
+    <com.zmonster.recyclebuy.view.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="注:每日签到可获取相应的积分"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:type_face_font="museosans_300" />
+
+
+</RelativeLayout>

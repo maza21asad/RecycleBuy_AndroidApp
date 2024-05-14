@@ -1,0 +1,53 @@
+<resources>
+    <!-- Control app background color format: color value, resource reference -->
+    <attr name="custom_attr_app_bg" format="color|reference" />
+    <attr name="custom_attr_app_item_bg" format="color|reference" />
+    <attr name="custom_attr_app_item_title" format="color|reference" />
+    <!-- Control the corresponding color of the app tab navigation bar format: color value, resource reference -->
+    <attr name="custom_attr_app_tab_bg" format="color|reference" />
+    <attr name="custom_attr_app_tab_fore" format="color|reference" />
+    <attr name="custom_attr_app_tab_fore_light" format="color|reference" />
+    <!-- Control the background color of the app title bar format: color value, resource reference -->
+    <attr name="custom_attr_app_title_layout_bg" format="color|reference" />
+    <!--User avatar display placeholder Drawable format: color value, resource reference-->
+    <attr name="custom_attr_user_photo_place_holder" format="color|reference" />
+    <!-- User nickname font color format: color value, resource reference -->
+    <attr name="custom_attr_nickname_text_color" format="color|reference" />
+    <!-- User note font color format: color value, resource reference -->
+    <attr name="custom_attr_remark_text_color" format="color|reference" />
+    <!-- Transparency format of user avatar display: size value, resource reference -->
+    <attr name="custom_attr_user_photo_alpha" format="dimension|reference" />
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="type_face_font">
+            <enum name="avenir" value="1" />
+            <enum name="museosans_300" value="2" />
+            <enum name="museosans_500" value="3" />
+            <enum name="museosans_700" value="4" />
+            <enum name="proximanova_light" value="5" />
+            <enum name="proximanova_bold" value="6" />
+            <enum name="HiraginoSansGB_W3" value="7" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FontEditText">
+        <attr name="type_face_font_edit">
+            <enum name="avenir" value="1" />
+            <enum name="museosans_300" value="2" />
+            <enum name="museosans_500" value="3" />
+            <enum name="museosans_700" value="4" />
+            <enum name="proximanova_light" value="5" />
+            <enum name="proximanova_bold" value="6" />
+            <enum name="HiraginoSansGB_W3" value="7" />
+        </attr>
+    </declare-styleable>
+
+</resources>
