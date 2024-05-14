@@ -53,8 +53,6 @@ public class RecycleBuyApplication extends Application {
     }
 
     private void initTxCloud() {
-//        String secretId = "AKIDTbVOyFAzWqqZaQqJNDn32LSKxKYdenfN "; //Permanent key secretId
-//        String secretKey = "96uUpthjW2OYS5HD6i5B8rmEQcXEepkQ"; //Permanent key secretKey
         String secretId = "";
         String secretKey = "";
         QCloudCredentialProvider provider =
